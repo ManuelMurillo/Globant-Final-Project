@@ -42,3 +42,16 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+##Documentation
+
+### Color Pallete from [Adobe Colors](https://color.adobe.com/es/create/color-wheel)
+
+
+- ![#4b77cc](https://via.placeholder.com/15/4b77cc/000000?text=+) `#4b77cc`
+- ![#858c99](https://via.placeholder.com/15/858c99/000000?text=+) `#858c99`
+- ![#78ecff](https://via.placeholder.com/15/78ecff/000000?text=+) `#78ecff`
+- ![#ffcdb8](https://via.placeholder.com/15/ffcdb8/000000?text=+) `#ffcdb8`
+- ![#cc5f4b](https://via.placeholder.com/15/cc5f4b/000000?text=+) `#cc5f4b`
+
