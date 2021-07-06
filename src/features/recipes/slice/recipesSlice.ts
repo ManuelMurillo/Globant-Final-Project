@@ -1,11 +1,12 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { RootState, AppThunk } from '../../../app/store/store';
+import { RootState } from '../../../app/store/store';
 import { fetchSearchRecipesAsync } from '../services/recipes.services';
 
 export interface RecipesState {
   search: string,
   recipes: any,
   selectedRecipes: any[];
+  selected: any;
   status: string;
 }
 
@@ -13,6 +14,7 @@ const initialState: RecipesState = {
   search: '',
   recipes: null,
   selectedRecipes: [],
+  selected: null,
   status: ''
 };
 
@@ -28,6 +30,9 @@ export const recipesSlice = createSlice({
   name: 'recipes',
   initialState,
   reducers: {
+    updateRecipe: (state, action: PayloadAction<any>) => {
+      state.selected = action.payload;
+    },
     updateSearchString: (state, action: PayloadAction<string>) => {
       state.search = action.payload;
     },
@@ -51,8 +56,9 @@ export const recipesSlice = createSlice({
   },
 });
 
-export const { addRecipe, removeRecipe, updateSearchString } = recipesSlice.actions;
+export const { addRecipe, removeRecipe, updateSearchString, updateRecipe } = recipesSlice.actions;
 export const selectSearch = (state: RootState) => state.recipes.search;
 export const selectRecipes = (state: RootState) => state.recipes.selectedRecipes;
+export const selectRecipe = (state: RootState) => state.recipes.selected;
 export const selectSearchRecipes = (state: RootState) => state.recipes.recipes;
 export default recipesSlice.reducer;

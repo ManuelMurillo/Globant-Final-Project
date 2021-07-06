@@ -1,6 +1,7 @@
+import s from './Docs.module.css'
 export function Docs() {
   return (
-    <article className="container">
+    <article id="documentation" className={`container ${s.docs}`}>
       <h3>Nutritional Calculator</h3><br />
       <p>In this WebApp you will be able to:</p><br />
       <ul>

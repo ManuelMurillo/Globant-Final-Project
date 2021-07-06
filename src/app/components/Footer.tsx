@@ -1,8 +1,8 @@
-import styles from './styles.module.css'
+import s from './styles.module.css'
 export function Footer() {
   return (
     <footer>
-      <nav className="container">
+      <nav className={`container ${s.footer}`}>
         <div className="row">
           <div className="col-sm-4 col-md-2">
             <p>Created by:</p>

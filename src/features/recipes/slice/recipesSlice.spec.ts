@@ -24,12 +24,14 @@ const initialState: RecipesState = {
   search: '',
   recipes: null,
   selectedRecipes: [],
+  selected: null,
   status: ''
 };
 const actualState: RecipesState = {
   search: '',
   recipes: null,
   selectedRecipes: [recipe],
+  selected: null,
   status: ''
 };
 
@@ -39,6 +41,7 @@ describe('recipes reducer', () => {
       search: '',
       recipes: null,
       selectedRecipes: [],
+      selected: null,
       status: ''
     });
   });

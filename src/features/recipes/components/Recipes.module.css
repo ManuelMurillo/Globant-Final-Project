@@ -1,0 +1,27 @@
+.card {
+    border-radius: 10px;
+    border: 2px solid #4b77cc;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.card button {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid #4b77cc;
+}
+.details {
+    padding: 1rem
+}
+.details button {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid #4b77cc;
+}
+.details table {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid #4b77cc;
+}
+.details img {
+    padding: 1rem
+}

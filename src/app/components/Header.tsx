@@ -1,15 +1,15 @@
 
 import { Menu } from './Menu';
-import styles from './styles.module.css';
+import s from './styles.module.css';
 
 export function Header() {
   return (
     <header>
-      <nav className="container">
+      <nav className={`container-fluid ${s.header}`}>
         <div className="row">
           <div className="col">
             <h1>Nutritional Calculator</h1>
-            <span>Final Project</span>
+            <p>Final Project</p><br />
           </div>
         </div>
         <div className="row">

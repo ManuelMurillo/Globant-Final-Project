@@ -1,0 +1,24 @@
+.header {
+    padding-top: 1rem;
+    background-color: #4b77cc;
+    color: white;
+}
+.header nav {
+    background-color: #ffcdb8;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+}
+.header a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.footer {
+    padding: 2rem;
+    background-color: #78ecff;
+}
+.footer a {
+    text-decoration: none;
+}

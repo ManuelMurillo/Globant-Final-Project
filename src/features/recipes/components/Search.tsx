@@ -19,19 +19,23 @@ export function Search() {
     return (
         <section className="container">
             <div className="row">
-                <div className="col-sm-12">
-                    <div>Busca una Receta</div>
-                    <input
-                        type="text"
-                        id="movie"
-                        value={searchString}
-                        onChange={ChangeNameTask}
-                        aria-required="true"
-                    />
-                    <br />
-                    <button type="button" onClick={Search}>
-                        Buscar Receta
-                    </button>
+                <div className="col-sm-12 d_flex justify_content_center p_1">
+                    <h3>Looking for a Recipe</h3>
+                </div>
+                <div className="col-sm-12 d_flex justify_content_center p_1">
+                    <div>
+                        <input
+                            type="text"
+                            id="movie"
+                            value={searchString}
+                            onChange={ChangeNameTask}
+                            aria-required="true"
+                            className="p_1"
+                        />
+                        <button type="button" className="p_1" onClick={Search}>
+                            Search
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
