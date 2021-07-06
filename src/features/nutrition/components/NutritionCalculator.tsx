@@ -13,10 +13,6 @@ export function NutritionalCalculator() {
 
   const recipes: any = useSelector(selectRecipes);
 
-  useEffect(() => {
-    console.log(recipes)
-  })
-
   return (
     <section aria-label="saved recipes" id="savedRecipes" className="container">
       <div className="row">
