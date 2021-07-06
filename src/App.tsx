@@ -13,10 +13,7 @@ function App() {
       <Header />
       <main className="container">
         <div className="row">
-          <div className="col-2">
-            <Menu />
-          </div>
-          <div className="col-10">
+          <div className="col-sm-12">
             <DocsRouting />
             <RecipesRouting />
             <NutritionRouting />

@@ -16,6 +16,9 @@ footer,
 main {
   width: 100vw;
 }
+img {
+  width: 100%;
+}
 
 .container {
   width: 100%;
