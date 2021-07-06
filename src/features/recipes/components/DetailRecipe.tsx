@@ -32,11 +32,12 @@ export function DetailRecipe() {
         history.goBack();
     }
     const AddRecipe = () => {
+        alert('Recipe Added!')
         dispatch(addRecipe(info));
     }
 
     return (
-        <section className={`container ${s.details}`}>
+        <section aria-label="detail recipes" id="detailRecipe" className={`container ${s.details}`}>
             {info ?
                 <div className="row">
                     <div className="col-sm-12 col-md-5 p_1">
@@ -71,7 +72,7 @@ export function DetailRecipe() {
                 : ''}
             <div className="row">
                 <div className="col-sm-12 d_flex justify_content_between">
-                    {info ? <button onClick={OnBack}>Add</button> : ''}
+                    {info ? <button onClick={AddRecipe}>Add</button> : ''}
                     <button onClick={OnBack}>Back</button>
                 </div>
             </div>

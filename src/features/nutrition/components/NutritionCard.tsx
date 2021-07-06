@@ -1,26 +1,25 @@
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router";
-import { addRecipe, updateRecipe } from "../slice/recipesSlice";
-import s from './Recipes.module.css';
+import { removeRecipe, updateRecipe } from "../../recipes/slice/recipesSlice";
+import s from './Nutrition.module.css'
 
-export function CardRecipe(props: any) {
+export function NutritionalCard(props: any) {
 
     const dispatch = useDispatch()
     const history = useHistory();
 
-    const AddRecipe = () => {
-        alert('Recipe Added!')
-        dispatch(addRecipe(props.info));
+    const RemoveRecipe = () => {
+        alert('Recipe Removed!')
+        dispatch(removeRecipe(props.info));
     }
     const DetailRecipe = () => {
         const id = props.info.uri.split('_')[1]
-        dispatch(updateRecipe(props.info))
+        dispatch(updateRecipe(props.info.recipe))
         history.push(`/recipes/${id}`)
     }
-
     return <>
         {props.info ?
-            <section aria-label="short recipes"id="shortRecipe" className={`container ${s.card}`}>
+            <section aria-label="saved recipe" id="savedRecipe" className={`container ${s.card}`}>
                 <div className="row">
                     <div className="col-sm-12 d_flex justify_content_center p_1">
                         <h3>{props.info.label}</h3><br />
@@ -37,18 +36,18 @@ export function CardRecipe(props: any) {
                         <a href={props.info.url} target="_blank" rel="noopener noreferrer">{props.info.source}</a>
                     </div>
                     <div className="col-sm-12 d_flex justify_content_between p_1">
-                        <button onClick={DetailRecipe}>Details</button>
-                        <button onClick={AddRecipe}>Add Recipe</button>
+                        <button onClick={DetailRecipe}>Detail</button>
+                        <button onClick={RemoveRecipe}>Remove Recipe</button>
                     </div>
                 </div>
             </section> :
-            <section aria-label="no recipes" id="noRecipes" className={`container ${s.card}`}>
+            <section aria-label="no saved recipes" id="noSavedRecipes" className={`container ${s.card}`}>
                 <div className="row">
                     <div className="col-sm-12 d_flex justify_content_center p_1">
-                        <h3>There is no coincidences</h3><br />
+                        <h3>There are no saved recipes</h3><br />
                     </div>
                 </div>
             </section>
         }
-    </>;
+    </>
 }

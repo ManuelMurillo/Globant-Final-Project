@@ -40,7 +40,7 @@ export const recipesSlice = createSlice({
       state.selectedRecipes.push(action.payload);
     },
     removeRecipe: (state, action: PayloadAction<any>) => {
-      const index = state.selectedRecipes.findIndex((x: any) => x.recipe.uri === action.payload.recipe.uri)
+      const index = state.selectedRecipes.findIndex((x: any) => x.uri === action.payload.uri)
       state.selectedRecipes.splice(index, 1)
     },
   },

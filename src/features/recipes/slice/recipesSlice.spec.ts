@@ -3,7 +3,6 @@ import recipesReducer, {
 } from './recipesSlice';
 
 const recipe = {
-  'recipe': {
     'uri': 'http://www.edamam.com/ontologies/edamam.owl#recipe_353aa6aeaf25e64e79067f80dd16513e',
     'label': 'Southern-fried chicken tacos',
     'image': 'https://www.edamam.com/web-img/bf9/bf96797371f5f464027e38cff5ddedcb.jpg',
@@ -12,13 +11,6 @@ const recipe = {
     'shareAs': 'http://www.edamam.com/recipe/southern-fried-chicken-tacos-353aa6aeaf25e64e79067f80dd16513e/fried+chicken',
     'yield': 4,
     'dietLabels': []
-  },
-  '_links': {
-    'self': {
-      'href': 'https://api.edamam.com/api/recipes/v2/353aa6aeaf25e64e79067f80dd16513e?type=public&app_id=c8f9159d&app_key=0fd34dd64934dfb269abd5a569abc0c7',
-      'title': 'Self'
-    }
-  }
 }
 const initialState: RecipesState = {
   search: '',

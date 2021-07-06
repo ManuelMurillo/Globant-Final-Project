@@ -9,7 +9,7 @@ function Menu() {
           <Link to='/recipes'>Recipes</Link>
         </div>
         <div className="col-sm-4">
-          <Link to='/nutrition'>Nutrition</Link>
+          <Link to='/saved'>Saved</Link>
         </div>
         <div className="col-sm-4">
           <Link to='/docs'>Docs</Link>

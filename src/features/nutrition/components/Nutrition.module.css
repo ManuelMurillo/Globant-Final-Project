@@ -1,0 +1,11 @@
+.card {
+    border-radius: 10px;
+    border: 2px solid #cc5f4b;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.card button {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid #cc5f4b;
+}

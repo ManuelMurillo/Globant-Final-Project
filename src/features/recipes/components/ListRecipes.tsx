@@ -13,7 +13,7 @@ export function ListRecipes() {
     const recipes: any = useSelector(selectSearchRecipes);
 
     return (
-        <section className="container">
+        <section aria-label="list founded recipes" id="listFoundedRecipes"className="container">
             <div className="row">
                 {recipes ?
                     Object.keys(recipes.hits).length === 0 ?

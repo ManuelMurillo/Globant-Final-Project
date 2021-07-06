@@ -6,7 +6,7 @@ export function NutritionRouting() {
   return (
     <>
       <Switch>
-        <Route path="/nutrition" exact component={NutritionalCalculator}>
+        <Route path="/saved" exact component={NutritionalCalculator}>
         </Route>
       </Switch>
     </>

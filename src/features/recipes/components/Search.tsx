@@ -17,7 +17,7 @@ export function Search() {
     }
 
     return (
-        <section className="container">
+        <section aria-label="search recipes" id="searchRecipes" className="container">
             <div className="row">
                 <div className="col-sm-12 d_flex justify_content_center p_1">
                     <h3>Looking for a Recipe</h3>
@@ -31,6 +31,7 @@ export function Search() {
                             onChange={ChangeNameTask}
                             aria-required="true"
                             className="p_1"
+                            placeholder="Good Luck!"
                         />
                         <button type="button" className="p_1" onClick={Search}>
                             Search

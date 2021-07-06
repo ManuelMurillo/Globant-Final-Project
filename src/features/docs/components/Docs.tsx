@@ -21,9 +21,11 @@ export function Docs() {
         <p>Write the keywords you want and clic in search recipe</p>
         <p>Select or Add the recipe you want</p>
         <br />
-        <li>Nutrition:</li>
-        <p>Select or Add the recipe you want previously</p>
+        <li>Saved:</li>
+        <p>Select or Remove the recipe you previously adder</p>
         <p>Look all the nutrients from your recipes</p>
+        <li>Docs:</li>
+        <p>You're reading it :)</p>
       </ul>
     </article>
   );
