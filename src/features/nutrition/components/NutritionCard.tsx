@@ -14,7 +14,7 @@ export function NutritionalCard(props: any) {
     }
     const DetailRecipe = () => {
         const id = props.info.uri.split('_')[1]
-        dispatch(updateRecipe(props.info.recipe))
+        dispatch(updateRecipe(props.info))
         history.push(`/recipes/${id}`)
     }
     return <>
