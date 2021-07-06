@@ -5,7 +5,6 @@ import { RecipesRouting } from './features/recipes/RecipesRouting';
 import { NutritionRouting } from './features/nutrition/NutritionRouting';
 import { Footer } from './app/components/Footer';
 import { Header } from './app/components/Header';
-import { Menu } from './app/components/Menu';
 
 function App() {
   return (

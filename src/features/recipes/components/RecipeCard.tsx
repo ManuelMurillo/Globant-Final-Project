@@ -44,7 +44,7 @@ export function CardRecipe(props: any) {
             <section className={`container ${s.card}`}>
                 <div className="row">
                     <div className="col-sm-12 d_flex justify_content_center p_1">
-                        <h3>No Hemos encontrado coincidencias</h3><br />
+                        <h3>There is no coincidences</h3><br />
                     </div>
                 </div>
             </section>

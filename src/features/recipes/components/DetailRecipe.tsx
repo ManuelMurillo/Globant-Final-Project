@@ -71,7 +71,7 @@ export function DetailRecipe() {
                 : ''}
             <div className="row">
                 <div className="col-sm-12 d_flex justify_content_between">
-                    <button onClick={OnBack}>Add</button>
+                    {info ? <button onClick={OnBack}>Add</button> : ''}
                     <button onClick={OnBack}>Back</button>
                 </div>
             </div>
